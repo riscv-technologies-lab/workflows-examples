@@ -1,0 +1,17 @@
+name: Dummy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Dummy hello
+      run: |
+        echo "Hello from github actions!"
