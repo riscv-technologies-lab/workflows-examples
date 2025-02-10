@@ -12,6 +12,13 @@ jobs:
   main:
     runs-on: ubuntu-22.04
     steps:
-    - name: Dummy hello
-      run: |
-        echo "Hello from github actions!"
+    - name: ls
+      run: ls
+    - name: pwd
+      run: pwd
+    - name: env
+      run: env
+    - name: os info
+      run: cat /etc/*release
+      
+
